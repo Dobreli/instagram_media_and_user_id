@@ -19,4 +19,4 @@ class Find_Id:
             print(user_id)
             return {'media_id': media_id,"user_id":user_id ,'ex': ''}
         except Exception as ex:
-            return {'ex': f'Find id hatasi : {ex}'}
+            return {'ex': f'Find id: {ex}'}
