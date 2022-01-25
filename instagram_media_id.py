@@ -16,7 +16,6 @@ class Find_Id:
             media_json = json.loads(html.decode('utf-8'))
             media_id=media_json["media_id"]
             user_id=media_id.split("_")[1]
-            print(user_id)
             return {'media_id': media_id,"user_id":user_id ,'ex': ''}
         except Exception as ex:
             return {'ex': f'Find id: {ex}'}
